@@ -2516,7 +2516,7 @@ inline void SetAccessor(
   , SetterCallback setter = 0
   , v8::Local<v8::Value> data = v8::Local<v8::Value>()
   , v8::AccessControl settings = v8::DEFAULT
-  , v8::PropertyAttribute attribute = v8::None {
+  , v8::PropertyAttribute attribute = v8::None) {
   HandleScope scope;
 
   imp::NativeGetter getter_ =
